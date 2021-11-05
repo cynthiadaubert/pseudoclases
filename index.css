@@ -23,6 +23,7 @@ body {
   .faq {
     flex-direction: row;
     margin: 0 auto;
+    height: 100vh;
   }
 }
 
