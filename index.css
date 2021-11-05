@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+}
+
+.faq {
+  min-width: 375px;
+  height: 667px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+}
+
+@media (min-width: 960px) {
+  .faq {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
+
+h2 {
+  width: 312px;
+  height: 90px;
+  margin: 20px 0px 58px 0px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 38px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  h2 {
+    padding: 145px 0px 0px 206px;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+h3.faq-item-title {
+  width: 308px;
+  height: 44px;
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.faq-item-text {
+  display: none;
+  margin: 14px 0px 43px 0px;
+  padding: 0;
+}
+
+.faq-item:target .faq-item-text {
+  display: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: rgb(233, 155, 226);
+}
+
+a:before {
+  content: ">";
+  color: red;
+  width: 25px;
+  height: 100%;
+}
+
+ul.faq-list {
+  height: 245px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 960px) {
+  ul.faq-list {
+    padding-left: 195px;
+    padding-top: 109px;
+  }
+}
